@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ site.name }}</title>
+
+    {% include meta.html %}
+
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.2/semantic.min.css'>
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css" />
+  </head>
+
+  <body class='site'>
+
+    <div class='ui one column centered grid'>
+
+      <div class='row'>
+        <div class='column'>
+          <img src='images/logo_WIC@2x.png' class='ui centered image'/>
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class='ui icon menu'>
+          {% include icons.html %}
+        </div>
+      </div>
+
+      <div id='main' role='main' class='row'>
+        <div class='column'>
+          {{ content }}
+        </div>
+      </div>
+
+      <div class='row'>
+        <div class='ui compact menu'>
+          <a class='item' href='http://forum.westindiecollective.org'>Forum</a>
+          <a class='item' href='http://indie.stunfest.fr'>Stunfest indie zone</a>
+        </div>
+      </div>
+
+    </div>
+
+    {% include analytics.html %}
+
+  </body>
+</html>
