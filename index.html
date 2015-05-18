@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class='ui cards'>
+  {% for card in site.cards reversed %}
+  <div class='ui card'>
+
+    {% if card.image %}
+    <div class='ui image'>
+      <img class='image' height='170' src='{{ card.image }}'>
+    </div>
+    {% endif %}
+
+    {% if card.iframe %}
+    <div class='ui image'>
+      <iframe src='{{ card.iframe }}' width='290' height='170' frameborder='0' webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    {% endif %}
+
+    <div class='content'>
+      {{ card.content }}
+      <a class='header'>{{ card.title }}</a>
+      <div class='meta'>
+        <span class='date'>{{ card.date }}</span>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
