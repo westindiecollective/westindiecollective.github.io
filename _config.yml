@@ -1,0 +1,33 @@
+name: West Indie Collective
+
+description: Indie game developer community
+
+avatar: https://avatars2.githubusercontent.com/u/1932502?v=3&s=200
+
+footer-links:
+  email: westindiecollective@gmail.com
+  facebook: westindiecollective
+  github: westindiecollective
+  twitter: westindiec
+
+collections:
+  - cards
+
+google_analytics: UA-32545933-1
+
+url: http://westindiecollective.org
+
+baseurl: ""
+
+sass:
+  style: :expanded
+
+gems:
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
